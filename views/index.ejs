@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Recipes</title>
+    <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Instant Recipes</h1>
+        <form action="/recipe" method="POST">
+            <label for="ingredients">Enter ingredients:</label>
+            <input type="text" id="ingredients" name="ingredients" required>
+            <button type="submit">Get Recipes</button>
+        </form>
+    </div>
+</body>
+</html>
