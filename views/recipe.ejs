@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Instant Recipes</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Recipes for "<%= ingredient %>"</h1>
+      <% if (meals && meals.length > 0) { %>
+      <ul>
+        <% meals.forEach(recipe => { %>
+        <li>
+          <h2><%= recipe.strMeal %></h2>
+          <img src="<%= recipe.strMealThumb %>" alt="<%= recipe.strMeal %>" />
+        </li>
+        <% }) %>
+      </ul>
+      <% } else { %>
+      <p>No recipes found for these ingredients.</p>
+      <% } %>
+      <a href="/">Search Again</a>
+    </div>
+  </body>
+</html>
