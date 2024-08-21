@@ -3,25 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipe Finder</title>
+    <title>Search by Area</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Meal Finder</h1>
+      <h1>Search by Area</h1>
       <nav>
         <a href="/">Search by Main Ingredient</a>
         <a href="/search-by-area">Search by Area</a>
         <a href="/search-by-category">Search by Category</a>
       </nav>
 
-      <form action="/recipe" method="POST">
-        <label for="ingredients">Search by Main Ingredient:</label>
+      <form action="/search-area" method="POST">
+        <label for="area">Enter Recipe Area:</label>
         <input
           type="text"
-          id="ingredients"
-          name="ingredients"
-          placeholder="Enter an ingredient..."
+          id="area"
+          name="area"
+          placeholder="Enter a recipe area..."
           required
         />
         <button type="submit">Search</button>
